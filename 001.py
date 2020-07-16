@@ -1,11 +1,11 @@
 
-#verificar quantidade de linhas
+#mostra a lista arquivada
 # escritas em um aruivo
 arquivo = open('novo.txt', 'r')
+lista = (arquivo.readlines())
 
-conteudo = []
-for linha in arquivo:
-    linha = linha.strip()
-    conteudo.append(linha)
-print(f'O arquivo selecionado tem {len(conteudo)} linhas')
-arquivo.close()
+for i in lista:
+    print(i.strip())
+
+print(f'O arquivo tem {len(lista)} cadastros.')
+
