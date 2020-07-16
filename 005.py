@@ -1,11 +1,11 @@
 
 #apaga palavra
-arquivo = open('novo2.txt', 'r')
+arquivo = open('novo.txt', 'r')
 lista = arquivo.readlines()
 
 palavra = input('Digite a palavra a ser buscada: ').upper()
 
-arquivo = open('novo2.txt', 'w')
+arquivo = open('novo.txt', 'w')
 for i in lista:
     if i.strip().upper() != palavra:
         arquivo.write(i)
